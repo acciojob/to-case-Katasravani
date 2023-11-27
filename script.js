@@ -1,8 +1,14 @@
-function toCase(text) {
-  // write your code here
+function toCase() {
+    const inputString = prompt('Enter a string:');
+    
+    if (inputString && inputString.length > 0) {
+        const lowerCaseString = inputString.toLowerCase();
+        const upperCaseString = inputString.toUpperCase();
+        alert(`${lowerCaseString}-${upperCaseString}`);
+    } else {
+        alert('-');
+    }
 }
 
-// DO not change the code below
-
-const text = prompt("Enter text:");
-alert(toCase(text));
+// Call the function to get user input and display the result
+toCase();
